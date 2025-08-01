@@ -5,33 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <a href="#s1"><p>sessão 01</p></a>
         <a href="#s2"><p>sessão 02</p></a>
         <a href="#s3"><p>sessão 03</p></a>
         <a href="#s4"><p>sessão 04</p></a>
-    </nav>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                    <a class="nav-link" href="#s1"><p>sessão 01</p></a>
+                    <a class="nav-link" href="#s2"><p>sessão 02</p></a>
+                    <a class="nav-link" href="#s3"><p>sessão 03</p></a>
+                    <a class="nav-link" href="#s4"><p>sessão 04</p></a>
+            </div>
+          </div>
+        </div>
+      </nav>
     <main>
         <section id="s1">01</section>
         <div class="wrap-words"></div>
+
         <section id="s2">
             <h2>Tecnologias Trabalhadas</h2>
-            <div>
-                <div></div>
+            <div class="wrap-cards">
+                <div class="cardnosso">
+                    <img width="100px" height="100px" src="images/html.png" alt="HTML">
                     <h3>HTML</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto est, perferendis velit sapiente et dolore tempore nesciunt pariatur laborum? Amet aspernatur at voluptatibus minima eius consectetur? Natus, animi molestiae.</p>
-                <div></div>
+                </div>
+                <div class="cardnosso">
+                    <img width="100px" height="100px" src="images/css.webp" alt="HTML">
                     <h3>CSS</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque veritatis cum suscipit inventore, voluptatem quidem accusantium? Obcaecati tenetur consectetur assumenda sit nihil? Aliquam porro vel reprehenderit vero voluptates pariatur.</p>
-                <div></div>
+                </div>
+                <div class="cardnosso">
+                    <img width="100px" height="100px" src="images/javscript.png" alt="HTML">
                     <h3>JAVASCRIPT</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quidem rerum quasi perferendis illo, hic eum odit tempora, magnam sed, architecto culpa. Explicabo omnis itaque dignissimos, asperiores hic debitis perspiciatis.</p>
+                </div>
             </div>
         </section>
-
-        <section id="s3">03</section>
+        <section id="s3">
+            <div class="wrap-video">
+                <iframe width="100%" height="100%" class="vd" src="https://www.youtube.com/embed/gZPyHib9GNw?si=BTq4e3tBC13XWWoR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
         <section id="s4">04
             <h2>Contado</h2>
             <div class="formulario">
